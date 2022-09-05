@@ -1,0 +1,16 @@
+package com.babiesjulius.mcinfo.listener;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+import java.time.Instant;
+import java.util.Date;
+
+public class JoinListener implements Listener {
+
+    @EventHandler
+    public void onJoin(PlayerJoinEvent event) {
+        event.getPlayer().addScoreboardTag("last_login:" + Date.from(Instant.now()));
+    }
+}

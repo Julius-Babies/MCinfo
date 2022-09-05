@@ -1,0 +1,10 @@
+name: MCInfo
+version: '1.0'
+main: com.babiesjulius.mcinfo.Main
+api-version: 1.19
+authors: [ JuliusBabies ]
+description: This Plugin opens an API for the server
+
+commands:
+  port:
+    description: Set the port of the API
